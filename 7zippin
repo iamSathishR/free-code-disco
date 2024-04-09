@@ -1,0 +1,9 @@
+import os
+
+folder_path = "path/to/your/folder"
+seven_zip_path = "path/to/7zip/7z.exe"
+zip_file_name = "archive.zip"
+
+os.chdir(folder_path)
+command = f'"{seven_zip_path}" a -tzip "{zip_file_name}" *'
+os.system(command)
